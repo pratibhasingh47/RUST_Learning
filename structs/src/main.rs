@@ -5,14 +5,22 @@ struct User {
     sign_in_count: u64,
 }
 
+
+#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
 }
+impl Rectangle {
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
+}
 
 
-struct Color(i32, i32, i32);
-struct Point(i32, i32, i32);
+
+// struct Color(i32, i32, i32);
+// struct Point(i32, i32, i32);
 
 
 fn main() {
@@ -42,12 +50,12 @@ fn main() {
         .._user2
     };
 
-    struct Color(i32, i32, i32);
-    struct Point(i32, i32, i32);
+    // struct Color(i32, i32, i32);
+    // struct Point(i32, i32, i32);
 
 
-    let width1 = 30;
-    let height1 = 50;
+    let _width1 = 30;
+    let _height1 = 50;
 
     // println!(
     //     "The area of the rectangle is {} square pixels.",
@@ -61,6 +69,18 @@ fn main() {
     //     area(rect1)
     // );
 
+    // let rect1 = Rectangle {
+    //     width: 30,
+    //     height: 50,
+    // };
+
+    // println!("rect1 is {rect1:?}");
+
+    // println!(
+    //     "The area of the rectangle is {} square pixels.",
+    //     area(&rect1)
+    // );
+
     let rect1 = Rectangle {
         width: 30,
         height: 50,
@@ -68,7 +88,7 @@ fn main() {
 
     println!(
         "The area of the rectangle is {} square pixels.",
-        area(&rect1)
+        rect1.area()
     );
 
 
