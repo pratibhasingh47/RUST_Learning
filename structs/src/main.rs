@@ -132,6 +132,7 @@ fn _area(rectangle: &Rectangle) -> u32 {
 //     width * height
 // }
 
+
 fn _build_user(email: String, username: String) -> User {
     // User {
     //     active: true,
