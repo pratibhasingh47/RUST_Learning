@@ -17,7 +17,7 @@ fn main() {
     let b = 0xff; // Hex
     let c = 0o77; // Octal
     let d = 0b1111_0000; // Binary
-    let e = b"A"; // Byte(u8 only)
+    let _e = b"A"; // Byte(u8 only)
     let f: u8 = 255;
 
     println!("{}", a);
@@ -68,7 +68,7 @@ fn main() {
     let tup = ("Let's Get Rusty!", 100_000);
     // println!("{}",tup);
 
-    let (channel, sub_count) = tup;
+    let (channel, _sub_count) = tup;
     let sub_count = tup.1;
     println!("{}", sub_count);
     println!("{}", channel);
@@ -77,7 +77,7 @@ fn main() {
     let not_found = error_codes[1];
     println!("{}", not_found);
 
-    let byte = [0; 8]; //crate an array of 8 elements all value to 0
+    let _byte = [0; 8]; //crate an array of 8 elements all value to 0
 
     //FUNCTIONS
     fn my_function(x: i32, y: i32) -> i32 {
@@ -103,7 +103,7 @@ fn main() {
     }
 
     let condition = true;
-    let number = if condition { 5 } else { 6 };
+    let _number = if condition { 5 } else { 6 };
 
     let mut counter = 0;
     let result = loop {
@@ -131,7 +131,7 @@ fn main() {
         println!("The value is {}", element);
     }
 
-    for number in (1..4) {
+    for number in 1..4 {
         println!("{}", number);
     }
 
