@@ -1,10 +1,9 @@
-struct User {
-    active: bool,
-    username: String,
-    email: String,
-    sign_in_count: u64,
-}
-
+// struct User {
+//     active: bool,
+//     username: String,
+//     email: String,
+//     sign_in_count: u64,
+// }
 
 #[derive(Debug)]
 struct Rectangle {
@@ -23,49 +22,46 @@ impl Rectangle {
 }
 
 impl Rectangle {
-    fn square(size: u32) -> Rectangle {
+    fn square(size: u32) -> u32 {
         Self {
             width: size,
             height: size,
-        }
+        };
+        return size * size;
     }
 }
-
 
 // struct Color(i32, i32, i32);
 // struct Point(i32, i32, i32);
 
-
 fn main() {
-    let mut user1 = User {
-        active: true,
-        username: String::from("pratibha"),
-        email: String::from("pratibha@.com"),
-        sign_in_count: 1,
-    };
+    // let mut user1 = User {
+    //     active: true,
+    //     username: String::from("pratibha"),
+    //     email: String::from("pratibha@.com"),
+    //     sign_in_count: 1,
+    // };
 
-    user1.email = String::from("ps@example.com");
+    // user1.email = String::from("ps@example.com");
 
-    let _name = user1.username;
-    user1.username = String::from("Pratibhaa");
+    // let _name = user1.username;
+    // user1.username = String::from("Pratibhaa");
 
+    // let _user2 = User {
+    //     username: String::from("new_user"),
+    //     email: String::from("another@example.com"),
+    //     active: todo!(),
+    //     sign_in_count: todo!(),
+    // };
 
-    let _user2 = User {
-        username: String::from("new_user"),
-        email: String::from("another@example.com"),
-        active: todo!(),
-        sign_in_count: todo!(),
-    };
-    
-    let _user3 = User {
-        username: String::from("new_user_user"),
-        email: String::from("another@example2.com"),
-        .._user2
-    };
+    // let _user3 = User {
+    //     username: String::from("new_user_user"),
+    //     email: String::from("another@example2.com"),
+    //     .._user2
+    // };
 
     // struct Color(i32, i32, i32);
     // struct Point(i32, i32, i32);
-
 
     let _width1 = 30;
     let _height1 = 50;
@@ -110,14 +106,12 @@ fn main() {
 
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+    println!("Square area : {:?}", Rectangle::square(47));
 
     println!(
         "The area of the rectangle is {} square pixels.",
         rect1.area()
     );
-
-
-
 }
 
 fn _area(rectangle: &Rectangle) -> u32 {
@@ -132,18 +126,17 @@ fn _area(rectangle: &Rectangle) -> u32 {
 //     width * height
 // }
 
-
-fn _build_user(email: String, username: String) -> User {
-    // User {
-    //     active: true,
-    //     username: username,
-    //     email: email,
-    //     sign_in_count: 1,
-    // } SAME
-    User {
-        active: true,
-        username,
-        email,
-        sign_in_count: 1,
-    }
-}
+// fn _build_user(email: String, username: String) -> User {
+//     // User {
+//     //     active: true,
+//     //     username: username,
+//     //     email: email,
+//     //     sign_in_count: 1,
+//     // } SAME
+//     User {
+//         active: true,
+//         username,
+//         email,
+//         sign_in_count: 1,
+//     }
+// }
