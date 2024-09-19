@@ -17,9 +17,9 @@ impl Message {
     }
 }
 
-struct IpAddr{
-    kind:IpAddrKind,
-    address : String,
+struct IpAddr {
+    kind: IpAddrKind,
+    address: String,
 }
 
 enum Option<T> {
@@ -42,7 +42,6 @@ enum UsState {
     Arkansas,
     California,
 }
-
 
 fn main() {
     // let four = IpAddrKind::V4;
@@ -74,8 +73,6 @@ fn main() {
         Some(max) => println!("The maximum is configured to be {max}"),
         _ => (),
     }
-
-
 }
 
 fn route(ip_kind: IpAddrKind) {
