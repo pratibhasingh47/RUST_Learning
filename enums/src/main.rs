@@ -17,7 +17,6 @@ impl Message {
     }
 }
 
-
 struct IpAddr{
     kind:IpAddrKind,
     address : String,
