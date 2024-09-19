@@ -1,3 +1,4 @@
+#[derive(Debug)]
 enum IpAddrKind {
     V4(String),
     V6(String),
@@ -17,6 +18,7 @@ impl Message {
     }
 }
 
+#[derive(Debug)]
 struct IpAddr {
     kind: IpAddrKind,
     address: String,
@@ -44,13 +46,14 @@ enum UsState {
 }
 
 fn main() {
-    // let four = IpAddrKind::V4;
-    // let six = IpAddrKind::V6;
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
 
-    // let localhost = IpAddr{
-    //     kind : IpAddrKind::V4,
-    //     address : String::from("127.0.0.1")
-    // }
+    let localhost = IpAddr {
+        kind: IpAddrKind::V4("127.0.0.1".to_string()),
+        address: String::from("127.0.0.1"),
+    };
+    println!("localhost is: {:?}", localhost);
 
     let _localhost = IpAddrKind::V4(String::from("127.0.0.1"));
 
