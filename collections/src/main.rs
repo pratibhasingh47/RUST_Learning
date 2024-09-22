@@ -72,12 +72,12 @@ fn main() {
     let s = format!("{s1}-{s2}-{s3}");
 
     let s1 = String::from("hello");
-    let h = s1[0];
+    // let h = s1[0];
 
     let hello = String::from("Hola");
     let hello = String::from("Здравствуйте");
     let hello = "Здравствуйте";
-    let answer = &hello[0];
+    // let answer = &hello[0];
 
     // [224, 164, 168, 224, 164, 174, 224, 164, 184, 224, 165, 141, 224, 164, 164, 224, 165, 135]
 
