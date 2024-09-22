@@ -1,5 +1,5 @@
 use std::fs::File;
-use std::io::ErrorKind;
+use std::io::{ErrorKind, Read};
 use std::net::IpAddr;
 
 fn main() {
@@ -50,7 +50,7 @@ fn main() {
         }
     }
 
-    fn read_username_from_file() -> Result<String, io::Error> {
+    fn read_username_from_file() -> Result<String, <<i8 as TryFrom> as TryInto>::Error> {
         let mut username = String::new();
 
         File::open("hello.txt")?.read_to_string(&mut username)?;
