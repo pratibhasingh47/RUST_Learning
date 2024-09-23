@@ -68,8 +68,6 @@ use std::ops::Add;
 
 // }
 
-
-
 // #[cfg(test)]
 // mod tests {
 //     use super::*;
@@ -160,5 +158,4 @@ mod tests {
             Err(String::from("two plus two does not equal four"))
         }
     }
-
 }
